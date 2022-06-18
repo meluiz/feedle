@@ -12,6 +12,7 @@ const Theme = extendTheme({
   },
   fonts: {
     body: 'Outfit, sans-serif',
+    cursive: 'Pacifico, cursive',
     mono: 'JetBrains Mono, monospace',
   },
   colors: {
@@ -63,7 +64,7 @@ const Theme = extendTheme({
       baseStyle: {
         maxW: {
           base: '1280px',
-          '3xl': '1536px',
+          xxxl: '1536px',
         },
       },
     },
@@ -92,8 +93,8 @@ const Theme = extendTheme({
     md: '48em',
     lg: '62em',
     xl: '80em',
-    '2xl': '96em',
-    '3xl': '112em',
+    xxl: '96em',
+    xxxl: '112em',
   },
 })
 
