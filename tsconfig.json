@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "pages": ["pages"],
+      "pages/*": ["pages/*"],
+      "components": ["src/components"],
+      "components/*": ["src/components/*"],
+      "configs": ["src/configs"],
+      "configs/*": ["src/configs/*"],
+      "contexts": ["src/contexts"],
+      "contexts/*": ["src/contexts/*"],
+      "hooks": ["src/hooks"],
+      "hooks/*": ["src/hooks/*"],
+      "services": ["src/services"],
+      "services/*": ["src/services/*"],
+      "themes": ["src/themes"],
+      "themes/*": ["src/themes/*"],
+      "types": ["src/types"],
+      "types/*": ["src/types/*"],
+      "utils": ["src/utils"],
+      "utils/*": ["src/utils/*"],
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
