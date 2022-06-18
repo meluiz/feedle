@@ -20,6 +20,38 @@
   </head>
   <body>
     <div id="__feedle"></div>
+    <noscript>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: white !important;
+        }
+
+        .__feed-error-container {
+          color: #0c0a0a;
+          max-width: 640px;
+          margin: 0 auto;
+          padding: 12%;
+          background: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+
+        .__feed-error-container > h1 {
+          font-weight: bold;
+        }
+      </style>
+      <div class="__feed-error-container">
+        <h1>Javascript não está habilitado</h1>
+        <p>
+          Detectamos que o JavaScript está desabilitado neste navegador. Ative o JavaScript ou
+          mude para um navegador compatível para continuar usando o
+          <a href="https://feedle.meluiz.com">feedle.meluiz.com</a>
+        </p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
