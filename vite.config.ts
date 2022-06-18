@@ -18,4 +18,7 @@ export default defineConfig({
       { find: 'src', replacement: '/src' },
     ],
   },
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' },
+  },
 })
