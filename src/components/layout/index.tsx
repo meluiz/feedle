@@ -28,6 +28,7 @@ const Component: React.FC<LayoutProps> = function ({ element }) {
         fontWeight="normal"
         fontStyle="normal"
       >
+        <Header />
         {element}
       </Flex>
     </Fragment>
