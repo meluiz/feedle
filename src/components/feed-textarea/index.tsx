@@ -1,5 +1,5 @@
 import type { EditorObject } from './type'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Actions from './actions'
@@ -19,6 +19,7 @@ const Component: React.FC = function () {
   const [editor, updateEditor] = useState<EditorObject>({
     hashtags: null,
     links: null,
+    files: null,
     plaintext: '',
   })
 
@@ -90,7 +91,7 @@ const Component: React.FC = function () {
               justifyContent="space-between"
               pos="relative"
             >
-              <Actions />
+              <Actions updateEditor={updateEditor} />
               <Flex
                 flexFlow="row nowrap"
                 alignItems="center"

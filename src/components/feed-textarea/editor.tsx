@@ -38,11 +38,12 @@ const Component: React.FC<EditorProps> = function ({ updateEditor }) {
       ) || null
 
     updateEditorValue(editor)
-    updateEditor({
+    updateEditor((prev) => ({
+      ...prev,
       hashtags: hashtags.length > 1 ? hashtags : null,
       links,
       plaintext,
-    })
+    }))
   }
 
   function blockStyle(content: ContentBlock): string {
