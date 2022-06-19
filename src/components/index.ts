@@ -1,5 +1,7 @@
 export type { LayoutProps } from './layout/type'
+export type { ToastProps, ToastThemeObject } from './toast/type'
 export { default as FeedTextarea } from './feed-textarea'
 export { default as Header } from './header'
 export { default as Layout } from './layout'
 export { default as Loader } from './loader'
+export { default as Toast } from './toast'
