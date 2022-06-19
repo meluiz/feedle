@@ -21,7 +21,8 @@
     "framer-motion": "^6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/draft-js": "^0.11.9",
