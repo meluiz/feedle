@@ -146,7 +146,14 @@ const Component: React.FC = function () {
                   </Flex>
                 )}
                 <Box w="1px" h="24px" display="block" pos="relative" bg="mauve.900" />
-                <Button aria-label="Publicar conteúdo">Publicar</Button>
+                <Button
+                  bg="whiteAlpha.200"
+                  _hover={{ bg: 'whiteAlpha.300' }}
+                  _active={{ bg: 'whiteAlpha.400' }}
+                  aria-label="Publicar conteúdo"
+                >
+                  Publicar
+                </Button>
               </Flex>
             </Flex>
           </Flex>
