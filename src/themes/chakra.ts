@@ -8,6 +8,19 @@ const Theme = extendTheme({
         color: 'mauve.100',
         backgroundColor: 'mauve.1200',
       },
+      '.paragraph': { color: 'red' },
+      '.DraftEditor-root': {
+        width: '100%',
+        position: 'relative',
+      },
+      '.public-DraftEditorPlaceholder-root': {
+        color: 'whiteAlpha.500',
+        position: 'absolute',
+        pointerEvents: 'none',
+        zIndex: 1,
+      },
+      '.DraftEditor-unstyled span': { wordBreak: 'break-word' },
+      '.hashtag': { color: 'red.500' },
     },
   },
   fonts: {

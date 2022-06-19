@@ -31,20 +31,21 @@ const Component: React.FC<LayoutProps> = function ({ element }) {
         <Grid w="100%" flex={1} pos="relative" bg="inherit">
           <Container px={{ base: 0, md: '16px' }}>
             <Grid w="100%" minH="100%" templateColumns={{ md: '1fr 2fr 1fr' }}>
-              <Box />
-              <Box
-                h="calc(100% + 1px)"
-                bg="mauve.1200"
-                borderLeft={{ lg: '1px solid' }}
-                borderRight={{ lg: '1px solid' }}
-                borderColor={{ lg: 'mauve.1000' }}
-                pos="relative"
-                px="18px"
-                as="main"
-              >
-                {element}
+              <Box w="100%" pos="relative" overflow="hidden" bg="inherit" as="aside" />
+              <Box w="100%" pos="relative" overflow="hidden" bg="inherit " as="main">
+                <Box
+                  w="100%"
+                  h="calc(100% + 1px)"
+                  bg="mauve.1200"
+                  borderLeft={{ lg: '1px solid' }}
+                  borderRight={{ lg: '1px solid' }}
+                  borderColor={{ lg: 'mauve.1000' }}
+                  pos="relative"
+                >
+                  {element}
+                </Box>
               </Box>
-              <Box />
+              <Box w="100%" pos="relative" overflow="hidden" bg="inherit" as="aside" />
             </Grid>
           </Container>
         </Grid>
